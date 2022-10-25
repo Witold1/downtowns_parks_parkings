@@ -1,0 +1,4 @@
+geopandas==0.10.2
+matplotlib==3.5.3
+numpy==1.21.6
+osmnx==1.1.1
