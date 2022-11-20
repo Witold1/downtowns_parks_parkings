@@ -195,7 +195,7 @@ def _main(cities=_get_list_of_cities(None), get_features=False):
 
         # plot data features
         print(f'\t {datetime.datetime.now()} plotting interim cartograms')
-        visuals.plot_interim_maps(area, waterways, water, False)
+        visuals.plot_interim_maps(area, waterways, water, place, False)
 
         print(f'\t {datetime.datetime.now()} plotting chart')
         # Create a subplot object for plotting the layers onto a common map

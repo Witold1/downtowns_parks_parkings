@@ -6,7 +6,7 @@ import networkx as nx
 # from pywaffle import Waffle
 # import folium
 
-def plot_interim_maps(area, waterways, water, save=False):
+def plot_interim_maps(area, waterways, water, place=None, save=False):
     """Plots the far and close looks on a city
 
     Parameters
@@ -18,6 +18,8 @@ def plot_interim_maps(area, waterways, water, save=False):
         {'water': True, 'natural' : ['bay', 'strait', 'water'], 'waterway' : True}
     water : geopandas.geodataframe.GeoDataFrame
         GeoDataFrame with polygon of big water in selected area
+    place : str
+        Place (location) name in OSM format to extract geometries from
     save : bool
         if save image
     ----------
@@ -67,7 +69,7 @@ def plot_interim_maps(area, waterways, water, save=False):
 
     fig.tight_layout()
     if save:
-        fig.savefig('Look oceanfront city.png', format='png', dpi=600, bbox_inches='tight')
+        fig.savefig(f'Look oceanfront city {place}.png', format='png', dpi=600, bbox_inches='tight')
 
 def plot_pictorial_map(area, edges, buildings, parkings, parks, waterways, water, axis):
     """Plots the pictoral map which shows the selected features of a city
@@ -99,8 +101,8 @@ def plot_pictorial_map(area, edges, buildings, parkings, parks, waterways, water
     # Plot the footprint
     area.plot(ax=axis, facecolor='black', zorder=0)
     # Plot street edges
-    edges[edges.bridge.isna()].plot(ax=axis, linewidth=0.9, edgecolor='dimgray', alpha=1., zorder=4)
-    edges[~edges.bridge.isna()].plot(ax=axis, linewidth=0.9, edgecolor='dimgray', alpha=0.85, zorder=10)
+    edges[edges.bridge.isna()].plot(ax=axis, linewidth=0.9, edgecolor='dimgray', alpha=1., zorder=4) # silver
+    edges[~edges.bridge.isna()].plot(ax=axis, linewidth=0.9, edgecolor='dimgray', alpha=0.85, zorder=10) # silver
 
     # Plot buildings
     buildings[buildings.geom_type != 'Point'].plot(ax=axis, facecolor='silver', alpha=0.7, zorder=6)
@@ -113,12 +115,12 @@ def plot_pictorial_map(area, edges, buildings, parkings, parks, waterways, water
     # DEPRICATED: Plot the general coastline
     # coastline[coastline.geom_type != 'Point'].plot(ax=ax, color='grey', alpha=0.8, lw=0.5, zorder=0)
     # Plot the water and waterways
-    waterways[waterways.geom_type != 'Point'].plot(ax=axis, color='lightblue', edgecolors=None, alpha=1.0, lw=0.5, zorder=3)
+    waterways[waterways.geom_type != 'Point'].plot(ax=axis, color='lightblue', edgecolors=None, alpha=1.0, lw=0.5, zorder=3) # #1f77b4
     ox.plot_footprints(water, bbox=(area.bounds.maxy[0], area.bounds.miny[0], area.bounds.maxx[0], area.bounds.minx[0]), #(bN, bS, bE, bW),
-                       #dpi=300, figsize=(18, 18),
-                       color='lightblue', bgcolor='white', ax=axis)
+                       save=False, show=False, close=False,
+                       color='lightblue', bgcolor='white', ax=axis) # #1f77b4
 
-    return ax
+    return axis
 
 def plot_pictorial_maps_vignette(path, group_start, group_end, group_num, enumerate_charts=True, save=True):
     """Plots a collective chart out of many pictoral maps
@@ -199,7 +201,7 @@ def _plot_pictorial_map_legend(save_path='legend_colors.png'):
     # !pip install pywaffle
     from pywaffle import Waffle
     colors = ['dimgray', 'silver', 'green', 'lightgreen', 'lightblue', 'yellow', '#b5b536', 'black']
-    dark_color_indexes = [0, 7] # [0, 1, 7]
+    dark_color_indexes = [0, 7] # [0, 1, 7] # what colorboxes will have a different, more readable color
     tags = ['motorways\nbridges', 'buildings', 'parks', 'grass', 'water', 'parkings', 'parking\nbuildings', 'city\nlimits']
 
     fig = plt.figure(figsize=(10, 20), facecolor='white', dpi=600,

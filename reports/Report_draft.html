@@ -13079,6 +13079,13 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#128142;-Downtowns:-Parks-&amp;-Parkings">&#128142; Downtowns: Parks &amp; Parkings<a class="anchor-link" href="#&#128142;-Downtowns:-Parks-&amp;-Parkings">&#182;</a></h1>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
@@ -13157,6 +13164,418 @@ div#notebook {
         </th>
       </tr>
 </table>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#10024;-Motivation">&#10024; Motivation<a class="anchor-link" href="#&#10024;-Motivation">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Why?</strong></p>
+<p>When a few weeks ago I drived to Detroit, MI to spend some time in the downtown area I was walking around the skyscrapers, historical buildings, construction areas, and many parking. So I did wander what share of a city core was dedicated to parkings. Moreover, I decided to compare it with other big cities. That's how this project started.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#128736;&#65039;-Methogology">&#128736;&#65039; Methogology<a class="anchor-link" href="#&#128736;&#65039;-Methogology">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Data source</strong></p>
+<ul>
+<li><code>OpenStreetMap</code> to get city features (i.e. roads, buildings, amenities, waterways) and <code>open sources</code> (i.e. city web page, city division, list of neighborhoods, information from mapping platforms) to get an idea of downtown boundaries were used<ul>
+<li>OpenStreetMap is a good-to-go starting point. More advanced custom methods might include a mix of OSM with segmentation of satellite images, crowdsourcing/error-chechs using manual marketplaces, and analysis of local zoning and business documentation</li>
+<li>Downtown functions and downtown boundaries may vary across many cities and urbanistic schools of thoughts</li>
+</ul>
+</li>
+</ul>
+<p><strong>Tools</strong></p>
+<ul>
+<li><code>python</code> language (inc. its' ecosystem) was used as a main set of tools to extract and process datasets, log steps, find disparities, and create visualisations. Open <code>google earth</code> sowtware was used as a satelite imaginery provider and 3D renderer to compare extracted datasets with real-life state of things, to resolve urban tricks and gimmics</li>
+</ul>
+<p><strong>Pipeline</strong></p>
+<table>
+   <tr>
+      <td>
+      Data flow (logic)
+      </td>
+   </tr>
+   <tr>
+      <td>
+      <img src="../figures/external/pipeline.png?raw=true" align="center" alt="pipeline flow" width="100%">
+      </td>
+   </tr>
+   <tr>
+      <td>
+      Data flow (visual)
+      </td>
+   </tr>
+   <tr>
+      <td>
+      <img src="../figures/internal/zoomed_oceanfront_preface.png?raw=true" align="right" alt="pipeline viz" width="80%">
+      </td>
+   </tr>
+</table><p><strong>Next steps</strong></p>
+<ul>
+<li>What if we would look at a static view but trends? For example, parking lots oftenly evolve into construction areas (see <code>Seattle, WA</code> from 2015), parks change (got more developed, change in size), landuse and zoning may drasticly change, even the land may get reclaimed</li>
+<li>What if we would compare more cities? What conditions might we use to pick them?</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#128301;-Secondary-sources-and-related-research">&#128301; Secondary sources and related research<a class="anchor-link" href="#&#128301;-Secondary-sources-and-related-research">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Legend:</p>
+<ul>
+<li>Buildings - 🏛️; Roads - 🛣️</li>
+</ul>
+<p>Ⓐ General</p>
+<ol>
+<li>⭐🏛️ <a href="https://www.nytimes.com/interactive/2021/07/07/upshot/downtown-office-vulnerable-even-before-covid.html">"The downtown office district was vulnerable. Even before Covid." by Emily Badger and Quoctrung Bui, The Upshot &amp; CoStar, NYT</a> <a href="https://www.bizjournals.com/bizjournals/news/2021/07/12/nyt-downtown-district-post-covid.html">[link 2]</a></li>
+<li>🏛️ <a href="https://www.nytimes.com/interactive/2018/10/12/us/map-of-every-building-in-the-united-states.html">"A map of every building in America" by NYT</a></li>
+<li><a href="https://www.nytimes.com/interactive/2021/06/30/opinion/environmental-inequity-trees-critical-infrastructure.html">"Since When Have Trees Existed Only for Rich Americans?" by NYT</a></li>
+<li><a href="https://www.bloomberg.com/news/features/2022-08-17/as-remote-work-endures-downtowns-are-adapting">"Why Downtown Won’t Die" by Richard Florida, CityLab | Economy, Bloomberg</a></li>
+<li>⭐🛣️ <a href="https://usmodernist.org/index-af.htm">"Building Money - Traffic and Realty", page 57-65; Architectural Forum, 1940, Jan</a></li>
+<li>🛣️🏛️ <a href="https://www.visualcapitalist.com/visualizing-the-footprint-of-highways-in-american-cities/">"Visualizing the Footprint of Highways in American Cities" by Nicholas LePan, VisualCapitalist</a></li>
+<li>⭐🏛️ <a href="https://www.strongtowns.org/journal/2019/11/27/parking-dominates-our-cities-but-do-we-really-see-it">"Parking Dominates Our Cities. But Do We Really <em>See</em> It?" by Daniel Herriges, StrongTowns</a></li>
+<li>🏛️ <a href="https://fatpencilstudio.com/blog/mapping-buildings/">"Mapping Buildings" by SEBASTIAN MARTICORENA, FatPencilStudio</a></li>
+<li>⭐ <a href="https://detroitography.com/">Maps &amp; articles by DetroiTography.com</a>, see <a href="https://detroitography.com/2015/08/24/data-29000-parking-spaces-in-detroits-woodward-corridor/">[Parkings section]</a></li>
+<li>⭐ <a href="http://mapdetroit.blogspot.com/">Maps &amp; articles by MappingTheStrait</a></li>
+<li><a href="https://300000kms.net/expertise/data-visualization/">Maps &amp; articles by 300000km/s studio</a></li>
+<li><a href="https://urbanspatialanalysis.com/portfolio/data-visualizations/">Maps &amp; articles by Urban Spatial</a></li>
+<li><a href="https://github.com/symmy596/PythonMaps">PythonMaps by Adam Symington</a></li>
+<li><a href="https://www.cwmaps.com/portfolio.html">Hal Jespersen’s Cartography Services — Map Portfolio</a></li>
+<li>🛣️ <a href="https://nicolasrapp.com/studio/portfolio/rise-of-the-megacity/">"Rise of the Megacity" by Nicolas Rapp</a></li>
+<li>⭐🛣️ <a href="https://erdavis.com/2019/07/27/the-beautiful-hidden-logic-of-cities/">"The Beautiful Hidden Logic of Cities" by ERIN R DAVIS</a></li>
+<li><a href="https://www.reddit.com/r/MapPorn/comments/hw2db5/1422_paris_map_on_top_of_today_paris/">"1422 Paris map on top of today Paris", Reddit</a></li>
+<li><a href="https://thefrisc.com/housing-arguments-over-sb-50-distort-my-upzoning-study-heres-how-to-get-zoning-changes-right-40daf85b74dc">"Housing Arguments Over SB 50 Distort My Upzoning Study. Here’s How to Get Zoning Changes Right" by 
+Yonah Freemark</a></li>
+<li>🏛️ <a href="https://geoawesomeness.com/map-shows-age-buildings-paris/">"Map shows age of buildings in Paris" by Aleks Buczkowski</a></li>
+<li>🏛️ <a href="https://parispropertygroup.com/blog/2017/the-history-of-paris-architecture-interactive-map/">"The History of Paris Architecture: Interactive Map", Paris Property Group</a></li>
+<li>🛣️ <a href="https://medium.com/@stanislavrogozhin/%D0%BA%D0%B0%D1%80%D1%82%D0%B0-%D1%82%D0%B8%D0%BF%D0%BE%D0%B2-%D1%83%D0%BB%D0%B8%D1%86-%D0%BC%D0%BE%D1%81%D0%BA%D0%B2%D1%8B-7b9ae05864bb">"Карта типов улиц Москвы" by Stanislav Rogozhin</a></li>
+<li>🏛️ <a href="http://www.undertheraedar.com/2015/07/urban-footprints-some-building-outline.html">"Urban footprints: some building outline data sources", by ALASDAIR RAE, UnderTheRaedar</a></li>
+<li>🏛️ <a href="https://journal.tinkoff.ru/tesno-stat/">"Какие районы Москвы и Петербурга самые тесные, а какие — просторные" by A. Ivolgin, Tinkoff Journal</a></li>
+<li><a href="https://gis.stackexchange.com/questions/243816/building-footprints-of-the-city-of-guayaquil-ecuador">"Building footprints of the city of Guayaquil, Ecuador", question on gis.stackexchange</a></li>
+<li>🏛️ <a href="https://realty.rbc.ru/news/577d24a79a7947a78ce91e0d">"Самый известный водочный завод в России застроят жильем" by Realty.RBC</a></li>
+<li><a href="http://projectivecities.aaschool.ac.uk/portfolio/jingru-cheng-infrastructural-urbanism/">"Infrastructural Urbanism" by Jingru Cyan Cheng, ProjectiveCities</a></li>
+<li>🛣️ <a href="https://archive.louisville.com/content/we-mapped-development-west-louisville">"We Mapped Development in West Louisville" by Louisville.com</a></li>
+<li>🏛️🛣️ <a href="https://news.osu.edu/recreating-ghost-neighborhoods-destroyed-by-highways/">"Recreating “ghost neighborhoods” destroyed by highways" by Jeff Grabmeier, OSU</a></li>
+<li>🏛️ <a href="https://vizual-statistix.tumblr.com/search/shapefiles">"Building Footprints Areas" by Seth Kadish, Vizual Statistix</a></li>
+<li>🛣️ <a href="https://detroitmi.gov/sites/detroitmi.localhost/files/2022-02/DDOT-SystemMap_Nov21_012022.pdf">DDOT System Map</a></li>
+<li><a href="https://urbanfootprint.com/platform/analyst/">Urban Footprint platform's examples</a></li>
+<li><a href="https://www.flickr.com/photos/walkingsf/50833926582">"Map of the City and County of San Francisco (1955)", Erica Fischer Flickr collection</a></li>
+<li><a href="https://carto.com/blog/eighty-data-visualizations-examples-using-location-data-maps/">"80 Data Visualization Examples Using Location Data and Maps" by Peter Murray, Carto</a></li>
+<li><a href="https://blog.datawrapper.de/data-vis-dispatch-july-13-2021/">"Data Vis Dispatch, July 13" by Rose Mintzer-Sweeney, Datawrapper</a></li>
+<li><a href="https://arxiv.org/abs/2203.11078">"MTBF-33: A multi-temporal building footprint dataset for 33 counties in the United States (1900-2015)"
+by Johannes H. Uhl, Stefan Leyk</a></li>
+<li><a href="https://www.earth.com/news/local-air-pollution-map-oakland/">"Engineers band together to create local air pollution map of Oakland" by Eric Ralls, earth.com</a></li>
+<li><a href="https://www.vectorstock.com/royalty-free-vector/travel-poster-urban-street-plan-city-map-brussels-vector-35335858">"Travel poster urban street plan city map brussels vector image" and other maps from VectorStock</a></li>
+<li><a href="https://www.pinterest.com/pin/175570085456728939/">Una Vida Moderna collection, unavidamoderna.tumblr.com</a></li>
+<li><a href="https://www.pinterest.ch/pin/detroit-memories--438186238717389102/">Detroit memories collection, tumblr</a></li>
+<li><a href="https://www.shutterstock.com/image-vector/minimalistic-madrid-city-map-icon-753510280">"Minimalistic Madrid city map icon." and other maps from ShutterStock</a></li>
+<li><a href="https://twitter.com/LauraNavarroSol/status/1457669839166771201">"Red, Green and Blue: Parking spaces in Barcelona" hex map, by Laura Navarro</a></li>
+<li><a href="https://github.com/BlakeRMills/30DayMapChallenge">"#30DayMapChallenge 2020" by Blake Mills</a></li>
+<li><a href="https://arielsartistry.com/2020/11/01/30daymapchallenge-2020/index.html">"#30DayMapChallenge 2020" by Ariel Kadouri</a></li>
+<li><a href="https://madhurapg.github.io/">Madhura Gurav portfolio</a></li>
+<li><a href="https://www.maoran.io/index.html">Maoran Sun portfolio</a></li>
+<li><a href="https://petenguyen.design/">Pete Nguyen portfolio</a>, see <a href="https://petenguyen.design/data-vis-bellevue-growth">Data Visualization: Growth in Downtown Bellevue</a></li>
+<li><a href="https://www.behance.net/gallery/70468723/Adriana-Cano-Limarino-Architecture-Portfolio-2018">Adriana Cano Limarino Architecture Portfolio 2018</a></li>
+</ol>
+<p>Ⓑ 3D</p>
+<ol>
+<li>⭐ <a href="https://stamen.com/shadows-on-maps-are-getting-a-lot-more-exciting-and-heres-why/">"Shadows on maps are getting a lot more exciting, and here’s why" by Alan McConchie, Stamen.com</a></li>
+<li>⭐ <a href="https://somethingaboutmaps.wordpress.com/2022/01/13/towards-less-blender-y-relief/">Towards Less Blender-y Relief</a></li>
+<li>⭐ <a href="https://www.longitude.one/">3D rendered topographic maps by Longitude.one</a></li>
+<li>⭐ <a href="https://visualwallmaps.com/">Shaded maps (3D, Rayshadering) by Visual Wall Maps</a></li>
+<li>⭐ <a href="https://attilabatorfy.com/index.php/visualizations/">INFORMATION GRAPHICS, VISUALIZATIONS and MAPS: selected works" by Attila Batorfy</a></li>
+<li>⭐ <a href="https://data-visualization-blog.netlify.app/posts/mountains%20russia/">"Горы России самые высокие горы России" by Евгений Матеров</a></li>
+<li><a href="https://twitter.com/geo_spatialist">Twitter of Sean Conway</a></li>
+<li><a href="https://www.renderhub.com/3dstudio/coventry-england-30km">"Coventry England 30km 3D Model" by 3dstudio</a></li>
+<li><a href="https://wiki.openstreetmap.org/wiki/Paris,_France/Buildings_Heights_Import">Paris, France/Buildings Heights Import</a></li>
+<li><a href="https://www.cityjson.org/news/2019/08/26/Singapore-opendata/">"Singapore open data model available" by CityJSON</a></li>
+<li><a href="https://sites.google.com/site/3ddatavisualizationresearch/use-cases-scenarios/increasing-communication">"3D / Data Visualization for Urban Design and Planning" project by CMU</a></li>
+</ol>
+<p>Ⓒ GIS classes</p>
+<ol>
+<li><a href="https://autogis-site.readthedocs.io/en/latest/index.html">"Automating GIS Processes 2022" by University OF Helsinki</a></li>
+<li><a href="https://tsamsonov.github.io/r-geo-course/">"Визуализация и анализ географических данных на языке R" by T.Samsonov, MSU</a></li>
+<li><a href="https://geographicdata.science/book/intro.html">"Geographic Data Science with Python" book</a></li>
+<li><a href="https://github.com/martinfleis/sdsc21-workshop">"Capturing the Structure of Cities with Data Science workshop" SDSC 2021 Workshop by Martin Fleis</a></li>
+<li><a href="https://melaniewalsh.github.io/Intro-Cultural-Analytics/welcome.html">"Introduction to Cultural Analytics &amp; Python" by Melanie Walsh &amp; co.</a></li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#129513;-Diversity-of-parks-and-parkings">&#129513; Diversity of parks and parkings<a class="anchor-link" href="#&#129513;-Diversity-of-parks-and-parkings">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>Intro: cities are diverse formations, so their parkings and parks</code></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>① "Ramped" plazas (above ground) with "underground" parkings (ground-level)</strong></p>
+<ul>
+<li>See <code>Lansing, MI Capital Complex</code><ul>
+<li>There are garages below  elevated pedastrian areas of <a href="https://www.openstreetmap.org/way/99149462">Allegan Ramp</a> and <a href="https://www.openstreetmap.org/way/99149467">Ottawa Ramp</a></li>
+</ul>
+</li>
+</ul>
+<table>
+    <thread>
+      <tr>  
+        <td>Google Earth</td>
+        <td>OSM</td>
+        <td>Our map</td>
+      </tr>
+    </thread>
+    <tbody>
+      <tr>
+        <td><img src="../figures/external/examples/Lansing 1.png" alt="1" width="800" loading="lazy"></td>
+        <td><img src="../figures/external/examples/Lansing OSM 1.png" alt="1" width="800" loading="lazy"></td>
+        <td><img src="../figures/external/examples/Lansing Map 1.png" alt="1" width="800" loading="lazy"></td>
+      </tr>
+      <tr>
+        <td><img src="../figures/external/examples/Lansing 2.png" alt="1" width="800" loading="lazy"></td>
+        <td><img src="../figures/external/examples/Lansing OSM 2.png" alt="1" width="800" loading="lazy"></td>   
+      </tr>
+      <tr>
+        <td><a href="https://earth.google.com/web/@42.73423872,-84.55735129,259.40026904a,475.7138762d,35y,-163.31108364h,57.41520735t,0r">[Link 1]</a> <a href="https://earth.google.com/web/@42.73320415,-84.55948476,273.34097639a,484.53911799d,35y,38.53696821h,56.40698854t,0r">[Link 2]</a></td>
+        <td><a href="https://www.openstreetmap.org/way/99149462">[Link 1]</a> <a href="https://www.openstreetmap.org/way/99149467">[Link 2]</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+    </table><ul>
+<li>See <code>New Orleans, LA Caesar's Superdome</code> stadium<ul>
+<li>Caesar's Superdome was built above of the <a href="https://www.openstreetmap.org/relation/4598861">ground-level multi-storey parking</a></li>
+</ul>
+</li>
+</ul>
+<table>
+    <thread>
+      <tr>  
+        <td>Google Earth</td>
+        <td>OSM</td>
+        <td>Our map</td>
+      </tr>
+    </thread>
+    <tbody>
+      <tr>
+        <td><img src="../figures/external/examples/New Orleans 1.png" alt="1" width="800" loading="lazy"></td>
+        <td><img src="../figures/external/examples/New Orleans OSM 1.png" alt="1" width="800" loading="lazy"></td>
+        <td><img src="../figures/external/examples/New Orleans Map 1.png" alt="1" width="600" loading="lazy"></td>
+      </tr>
+      <tr>
+        <td><a href="https://earth.google.com/web/search/Caesar%27s+Superdome/@29.949733,-90.08068059,8.44637717a,380.20299896d,35y,-5.67773284h,61.41513312t,0r/data=CigiJgokCVbBueLn4EVAEZ1cPj7hv0RAGeCW5grHdVTAIYt0mH3_1FXA">[Link 1]</a></td>
+        <td><a href="https://www.openstreetmap.org/relation/4598861">[Link 1]</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+    </table>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>② Parkings under, above, and inside parks</strong></p>
+<ul>
+<li>See <code>Detroit, MI Grand Circus Park</code><ul>
+<li>There is <a href="https://www.openstreetmap.org/way/105551427">underground garage</a> built below the Grand Circus Park</li>
+</ul>
+</li>
+</ul>
+<table>
+    <thread>
+      <tr>  
+        <td>Google Earth</td>
+        <td>OSM</td>
+      </tr>
+    </thread>
+    <tbody>
+      <tr>
+        <td width="(100/2)%"><img src="../figures/external/examples/Detroit 1.png" alt="1" loading="lazy"></td>
+        <td width="(100/2)%"><img src="../figures/external/examples/Detroit OSM 1.png" alt="1" loading="lazy"></td>
+      </tr>
+      <tr>
+        <td width="(100/2)%">[Link 1]</td>
+        <td width="(100/2)%"><a href="https://www.openstreetmap.org/way/105551427">[Link 1]</a></td>
+      </tr>
+    </tbody>
+  </table><ul>
+<li>See <code>Chicago, IL Grant Park</code> ("Lake Park")<ul>
+<li>Chicago Downtown North is a quite multi-leveled (double-decked, triple-decked)  area</li>
+<li>Grant Park lands incorporate 6 big parkings (multi-leveled underground garages, surface, and above ground decks)</li>
+</ul>
+</li>
+</ul>
+<table>
+    <thread>
+      <tr>  
+        <td>Google Earth</td>
+        <td>Our map</td>
+      </tr>
+    </thread>
+    <tbody>
+      <tr>
+        <td width="800"><img src="../figures/external/examples/Chicago 1.png" alt="1" width="800" loading="lazy"></td>
+        <td width="800" rowspan="2"><img src="../figures/external/examples/Chicago Map 1.png" alt="1" width="280" loading="lazy"></td>
+      </tr>
+      <tr>
+        <td><img src="../figures/external/examples/Chicago 2.png" alt="1" width="800" loading="lazy"></td>
+      </tr>
+      <tr>
+        <td width="800"><a href="https://earth.google.com/web/search/Chicago/@41.881949,-87.62160472,184.55652598a,516.02894617d,35y,-10.11004043h,60.06077741t,0r/data=CigiJgokCUJk3vqhK0VAEQ4HUDT1KkVAGQKqVrLjwlTAITOZaWZ1w1TA">[Link 1]</a> <a href="https://earth.google.com/web/search/Chicago/@41.86322857,-87.61735656,194.46629955a,983.22602806d,35y,155.8281019h,50.0254675t,0r/data=CigiJgokCUJk3vqhK0VAEQ4HUDT1KkVAGQKqVrLjwlTAITOZaWZ1w1TA">[Link 2]</a></td>
+        <td width="800"></td>
+      </tr>
+    </tbody>
+  </table><ul>
+<li>See <code>Washington D.C. President's Park/The Ellipse</code> <ul>
+<li>Park incorporates <a href="https://www.openstreetmap.org/way/888981652">roadside parkings</a></li>
+</ul>
+</li>
+</ul>
+<table>
+    <thread>
+      <tr>  
+        <td>Google Earth</td>
+        <td>Our map</td>
+      </tr>
+    </thread>
+    <tbody>
+      <tr>
+        <td width="800"><img src="../figures/external/examples/WashDC 1.png" alt="1" width="800" loading="lazy"></td>
+        <td width="800"><img src="../figures/external/examples/WashDC Map 1.png" alt="1" width="200" loading="lazy"></td>
+      </tr>
+      <tr>
+        <td width="800"><a href="url">[Link 1]</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>③ Parkings &amp; parks around highways</strong></p>
+<ul>
+<li>See <code>Miami, FL parkings below I-95</code> (Southwest 2nd Street &amp; Southwest 2nd Avenue)<ul>
+<li>There are <a href="https://www.openstreetmap.org/way/992927355">surface parking lots</a> below the highway</li>
+</ul>
+</li>
+</ul>
+<table>
+    <thread>
+      <tr>  
+        <td>Google Earth</td>
+        <td>OSM</td>
+        <td>Our map</td>
+      </tr>
+    </thread>
+    <tbody>
+      <tr>
+        <td><img src="../figures/external/examples/Miami 1.png" alt="1" width="800" loading="lazy"></td>
+        <td><img src="../figures/external/examples/Miami OSM 1.png" alt="1" width="800" loading="lazy"></td>
+        <td><img src="../figures/external/examples/Miami Map 1.png" alt="1" width="800" loading="lazy"></td>
+      </tr>
+      <tr>
+        <td><a href="https://earth.google.com/web/@25.7721017,-80.19853195,1.25111968a,374.62700164d,35y,-12.08978763h,26.49267259t,0r">[Link 1]</a></td>
+        <td><a href="https://www.openstreetmap.org/way/992927355">[Link 1]</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+    </table><ul>
+<li>See <code>Seattle, WA Washington State Convention Center</code> area
+  * <a href="https://www.openstreetmap.org/way/13866261">Washington State Convention Center</a> and <a href="https://www.openstreetmap.org/relation/7152576">Jim Ellis Freeway Park</a> are placed above the highway</li>
+</ul>
+<table>
+    <thread>
+      <tr>  
+        <td>Google Earth</td>
+        <td>OSM</td>
+        <td>Our map</td>
+      </tr>
+    </thread>
+    <tbody>
+      <tr>
+        <td><img src="../figures/external/examples/Seattle 1.png" alt="1" width="800" loading="lazy"></td>
+        <td><img src="../figures/external/examples/Seattle OSM 1.png" alt="1" width="800" loading="lazy"></td>
+        <td><img src="../figures/external/examples/Seattle Map 1.png" alt="1" width="800" loading="lazy"></td>
+      </tr>
+      <tr>
+        <td><a href="https://earth.google.com/web/search/Seattle+WA/@47.61124005,-122.33072962,71.38172751a,673.79395136d,35y,-19.8317304h,35.62435351t,0r/data=CigiJgokCVXBJ5D57kRAEQeF_jmm7ERAGTxsHjhQ5lXAIfWLjWny51XA">[Link 1]</a></td>
+        <td><a href="https://www.openstreetmap.org/relation/7152576">[Link 1]</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+    </table><ul>
+<li>See <code>Phoenix, AZ Deck Park Tunnel / Margaret T. Hance Park</code> area<ul>
+<li><a href="https://www.openstreetmap.org/way/155109495">Margaret T. Hance Park</a> is placed above the highway</li>
+</ul>
+</li>
+</ul>
+<table>
+    <thread>
+      <tr>  
+        <td>Google Earth</td>
+        <td>OSM</td>
+        <td>Our map</td>
+      </tr>
+    </thread>
+    <tbody>
+      <tr>
+        <td><img src="../figures/external/examples/Phoenix 1.png" alt="1" width="800" loading="lazy"></td>
+        <td><img src="../figures/external/examples/Phoenix OSM 1.png" alt="1" width="800" loading="lazy"></td>
+        <td><img src="../figures/external/examples/Phoenix Map 1.png" alt="1" width="800" loading="lazy"></td>
+      </tr>
+      <tr>
+        <td><a href="https://earth.google.com/web/search/Phoenix/@33.46156862,-112.07392419,331.57999071a,1314.82608789d,35y,140.61566901h,48.57526292t,-0r/data=CigiJgokCclJQ_njGkBAEQIDtG3lFEBAGf5dquAmu1vAIS361G1dwVvA">[Link 1]</a></td>
+        <td><a href="https://www.openstreetmap.org/way/155109495">[Link 1]</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+    </table>
 </div>
 </div>
 </div>

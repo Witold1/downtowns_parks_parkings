@@ -1,14 +1,44 @@
 ## Project
 **Downtowns, Parks, Parkings** 🏢 🏞️ 🚙
 
-<img src="./figures/internal/zoomed_oceanfront_preface.png?raw=true" align="center" alt="preface" width="75%">
+<table>
+    <tr>
+        <td>
+          <img src="./figures/external/preface_1.jpeg" align="center" alt="Cobo Center Renovation and Expansion, from architectmagazine.com" width="1280">
+        </td>
+        <td>
+          <img src="./figures/external/preface_2.jpg" align="center" alt="Old Cobo Center - Mid Century Modernism in Mexico & Detroit, from unavidamoderna.tumblr.com: Photo" width="1280">
+        </td>
+    </tr>
+ </table>
 
 ## 📖 Task description
 > Placeholder
 
 <details>
   <summary>Pipeline scheme - click to view</summary>
-  <img src="./figures/external/pipeline.png?raw=true" align="center" alt="1-9" width="100%">
+  <table>
+   <tr>
+      <td>
+      Data flow (logic)
+      </td>
+   </tr>
+   <tr>
+      <td>
+      <img src="./figures/external/pipeline.png?raw=true" align="center" alt="pipeline flow" width="100%">
+      </td>
+   </tr>
+   <tr>
+      <td>
+      Data flow (visual)
+      </td>
+   </tr>
+   <tr>
+      <td>
+      <img src="./figures/internal/zoomed_oceanfront_preface.png?raw=true" align="right" alt="pipeline viz" width="80%">
+      </td>
+   </tr>
+</table>
 </details>
 
 Current raw report available, see [[html]](https://htmlpreview.github.io/?https://github.com/Witold1/downtowns_parks_parkings/blob/master/reports/Report_draft.html) | [[ipynb]](https://nbviewer.org/github/Witold1/downtowns_parks_parkings/blob/master/reports/Report_draft.ipynb)
